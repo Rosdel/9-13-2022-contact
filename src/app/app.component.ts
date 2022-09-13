@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
+const td = document.querySelector(".thisTd");
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -32,9 +33,8 @@ export class AppComponent implements OnInit{
   Reset(){
     this.signupForm.reset()
   }
-  RemoveItem(index: any): void{ 
-    this.listData.splice(index, 1)
-}
+  RemoveItem(){
+  }
 
 
   ngOnInit(){
