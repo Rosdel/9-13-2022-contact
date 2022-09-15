@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators,ReactiveFormsModule,FormControl } from '@angular/forms';
 
 const td = document.querySelector(".thisTd");
 @Component({
@@ -11,25 +11,36 @@ export class AppComponent implements OnInit{
   suggestUserName() {
     const suggestedName = 'Superuser';
   }
-  signupForm!:FormGroup;
-  listData:any;
+  
+  listData:any = [];
+ constructor(){}
+  signupForm=new FormGroup({
+  firstname:new FormControl('',[Validators.required,Validators.maxLength(15),Validators.minLength(2), Validators.pattern("^[a-zA-Z]+$")]),
+  lastname:new FormControl('',[Validators.required,Validators.maxLength(15),Validators.minLength(2), Validators.pattern("^[a-zA-Z]+$")]),
+  age: new FormControl('',[Validators.required,Validators.maxLength(3),Validators.minLength(1),Validators.pattern(/^-?(0|[1-9]\d*)?$/)]),
+  phone: new FormControl('',[Validators.required ,Validators.maxLength(13),Validators.minLength(10) ])
+  })
 
-  constructor(private fb:FormBuilder){
-
-    this.listData = [];
-
-    this.signupForm=this.fb.group({
-      firstname:['',Validators.required],
-      lastname:['',Validators.required],
-      age:['',Validators.required],
-      phone:['',Validators.required],
-    })
-  }
-
-  public AddUser(): void{
+   public AddUser(): void{
     this.listData.push(this.signupForm.value)
+
     this.signupForm.reset();
+    
   }
+   get firstname() {
+    return this.signupForm.get('firstname');
+  } 
+  get lastname() {
+    return this.signupForm.get('lastname');
+  } 
+  get age() {
+    return this.signupForm.get('age');
+  } 
+  get phone() {
+    return this.signupForm.get('phone');
+  } 
+ 
+  
   Reset(){
     this.signupForm.reset()
   }
@@ -40,4 +51,7 @@ export class AppComponent implements OnInit{
   ngOnInit(){
 
   }
+  onSubmit(){
+    console.log(this.signupForm.value);}
+  
 }

@@ -1,36 +1,39 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
-      <form [formGroup]="signupForm">
-        <div id="user-data">
+      <form [formGroup]="signupForm" (ngSubmit)="onSubmit()" novalidate >
 
           <div class="form-group">
             <label for="firstname">Firstname</label>
             <input type="text" id="firstrname" class="form-control" formControlName="firstname">
           </div>
+          <span style="color:red" *ngIf="firstname && firstname.invalid && firstname.touched">Please enter your FirstName👆</span>
 
           <div class="form-group">
             <label for="lastname">Lastname</label>
-            <input type="text" id="lastname" class="form-control" formControlName="lastname">
+            <input type="text" id="lastname" class="form-control" formControlName="lastname"  >
           </div>
+          <span style="color:red" *ngIf="lastname && lastname.invalid && lastname.touched" >Please enter your LastName👆</span>
 
           <div class="form-group">
             <label for="age">Age</label>
-            <input type="text" id="age" class="form-control" formControlName="age">
+            <input type="number" id="age" class="form-control" formControlName="age" >
           </div>
+          <span style="color:red" *ngIf="age && age.invalid && age.touched">please Enter Your Age👆</span>
          
-          <div class="form-group">
+          <div class="form-group" >
             <label for="phone">Phone</label>
-            <input type="tel" id="phone" class="form-control" formControlName="phone">
+            <input type="tel" id="phone" class="form-control" formControlName="phone" >
           </div>
           <div class="form-row mt-4">
             <div class="col-md-6">
-                <button type="button"  class="btn btn-primary" (click)="AddUser()">Add User</button>&nbsp; 
+                
+                <button type="submit"  class="btn btn-primary" (click)="AddUser()" [disabled]="!signupForm.valid" >Add User</button>&nbsp; 
                 <button type="button" class="btn btn-primary" (click)="Reset()">Reset</button>
             </div>
           </div>
-        </div>
         
+        <!-- <button type="submit" [disabled]="!signupForm.valid" >submit</button> -->
         <!-- <button class="btn btn-primary" type="submit">Submit</button> -->
       </form>
       <div class="col-md-8 mt-4 mb-4">
@@ -65,7 +68,7 @@
                 {{item.phone}}
               </span>
             </td>
-            <td><button type="button" class="btn btn-primary" >Delete</button></td>
+            <td><button type="button" class="btn btn-primary" (click)="RemoveItem()" >Delete</button></td>
           </tr>
         </tbody>
         </table>
