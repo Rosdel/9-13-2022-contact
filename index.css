@@ -1,0 +1,331 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+.landing-page-child {
+  position: absolute;
+  top: 1033px;
+  left: 0;
+  width: 397px;
+  height: 397px;
+  object-fit: cover;
+}
+.aliquam-rhoncus-pretium,
+.find-the-stuff {
+  margin: 0;
+  position: absolute;
+  left: 221px;
+  font-family: var(--font-futura-pt);
+  color: var(--color-dimgray);
+  display: inline-block;
+}
+.find-the-stuff {
+  top: 236px;
+  font-size: 64px;
+  line-height: 67.5px;
+  font-weight: 400;
+  width: 458px;
+}
+.aliquam-rhoncus-pretium {
+  top: 403px;
+  font-size: 20px;
+  line-height: 32px;
+  width: 394px;
+}
+.background-black {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 5px;
+  background-color: var(--color-black);
+  width: 156.19px;
+  height: 46.28px;
+}
+.border-gray-icon {
+  position: relative;
+  width: 156.19px;
+  height: 46.28px;
+}
+.get-it-on,
+.google-play-icon {
+  position: relative;
+  width: 98.28px;
+  height: 19.67px;
+}
+.get-it-on {
+  width: 45.16px;
+  height: 7.46px;
+}
+.googleplay,
+.icon {
+  position: absolute;
+  top: 8.25px;
+  left: 11.53px;
+  width: 26.7px;
+  height: 29.77px;
+}
+.googleplay {
+  text-decoration: none;
+  top: 531px;
+  left: 381.81px;
+  width: 156.19px;
+  height: 46.28px;
+}
+.background-gray-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 138.44px;
+  height: 46.28px;
+}
+.background-black-icon {
+  position: absolute;
+  top: 1.01px;
+  left: 1.01px;
+  width: 136.42px;
+  height: 44.26px;
+}
+.app-store-icon {
+  position: relative;
+  width: 86.84px;
+  height: 18.07px;
+}
+.download-on-the,
+.icon1 {
+  position: relative;
+  width: 80px;
+  height: 7.36px;
+}
+.icon1 {
+  width: 20.5px;
+  height: 25.19px;
+}
+.appstore {
+  text-decoration: none;
+  position: absolute;
+  top: 531px;
+  left: 221px;
+  width: 138.44px;
+  height: 46.28px;
+}
+.home-icon,
+.orders-icon,
+.profile-icon {
+  position: absolute;
+  width: calc(100% - 1136px);
+  top: 888px;
+  right: 193px;
+  left: 943px;
+  max-width: 100%;
+  overflow: hidden;
+  height: 500px;
+  object-fit: cover;
+}
+.orders-icon,
+.profile-icon {
+  top: 893px;
+  right: 697px;
+  left: 439px;
+  height: 495px;
+}
+.profile-icon {
+  top: 666px;
+  right: 439px;
+  left: 697px;
+  height: 524px;
+}
+.designs-guru-rosdell {
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 67.5px;
+  font-weight: 600;
+}
+.designs-guru-rosdell-wrapper {
+  margin: 0;
+  position: absolute;
+  top: 14px;
+  left: 112.57px;
+  width: 453px;
+  height: 68px;
+  font-size: inherit;
+  font-family: inherit;
+}
+.habitual-branding-icon,
+.logoicon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 84.65px;
+  height: 95.88px;
+}
+.logoicon {
+  top: 66px;
+  left: 218px;
+  width: 565.57px;
+  font-size: var(--font-size-lg);
+  color: var(--color-black);
+}
+.isometriciphone-icon,
+.product-icon {
+  position: absolute;
+  width: calc(100% - 1136px);
+  top: 694px;
+  right: 949px;
+  left: 187px;
+  max-width: 100%;
+  overflow: hidden;
+  height: 524px;
+  object-fit: cover;
+}
+.isometriciphone-icon {
+  width: calc(100% - 849.39px);
+  top: 222.92px;
+  right: 192.42px;
+  left: 656.98px;
+  height: 384.95px;
+}
+.skills {
+  top: 461px;
+  left: 1121px;
+  font-size: var(--font-size-lg);
+  line-height: 67.5px;
+  font-weight: 600;
+  font-family: inherit;
+  color: var(--color-black);
+}
+.product-design,
+.skills,
+.tools {
+  margin: 0;
+  position: absolute;
+}
+.product-design {
+  top: 533px;
+  right: 67px;
+  line-height: 30px;
+}
+.tools {
+  top: 0;
+  left: 0;
+  font-size: var(--font-size-lg);
+  line-height: 67.5px;
+  font-weight: 600;
+  font-family: inherit;
+  color: var(--color-black);
+}
+.afigma,
+.bphotoshop-cc,
+.chtml-css,
+.djavascript {
+  margin: 0;
+  position: absolute;
+  top: 61px;
+  right: 104px;
+  line-height: 30px;
+}
+.bphotoshop-cc,
+.chtml-css,
+.djavascript {
+  top: 101px;
+  right: 0;
+}
+.chtml-css,
+.djavascript {
+  top: 137px;
+  right: 21px;
+}
+.djavascript {
+  top: 177px;
+  right: 45px;
+}
+.tools-parent {
+  position: absolute;
+  top: 827px;
+  left: 1209px;
+  width: 222px;
+  height: 207px;
+  font-size: var(--font-size-sm);
+}
+.motion-design,
+.web-design {
+  margin: 0;
+  position: absolute;
+  top: 575px;
+  right: 82px;
+  line-height: 30px;
+}
+.web-design {
+  top: 617px;
+  right: 116px;
+}
+.graphics-design,
+.mobile-design,
+.product-design1 {
+  margin: 0;
+  position: absolute;
+  top: 659px;
+  right: 84px;
+  line-height: 30px;
+}
+.graphics-design,
+.product-design1 {
+  top: 701px;
+  right: 50px;
+}
+.product-design1 {
+  top: 743px;
+  right: 67px;
+}
+.contactmebutton-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50px;
+  background-color: #3e3f44;
+  width: 240px;
+  height: 78px;
+}
+.contact-me {
+  position: absolute;
+  top: 22px;
+  left: 33px;
+  font-size: var(--font-size-base);
+  line-height: 30px;
+  font-family: var(--font-inter);
+  color: #ffbd00;
+  text-align: left;
+}
+.contactmebutton {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 89px;
+  left: 1071px;
+  width: 240px;
+  height: 78px;
+}
+.tel-0773872879 {
+  margin: 0;
+  position: absolute;
+  top: 607px;
+  left: 220px;
+  font-size: inherit;
+  line-height: 30px;
+  font-weight: 400;
+  font-family: inherit;
+  color: var(--color-black);
+}
+.landing-page {
+  position: relative;
+  background: linear-gradient(180deg, #fff, #f3f8f7 49.91%, #fff9f5 94.19%);
+  width: 100%;
+  height: 1388px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-darkslategray-100);
+  font-family: var(--font-inter);
+}

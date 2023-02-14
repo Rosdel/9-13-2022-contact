@@ -1,0 +1,15 @@
+:root {
+  /* fonts */
+  --font-inter: Inter;
+  --font-futura-pt: "Futura PT";
+
+  /* font sizes */
+  --font-size-sm: 25px;
+  --font-size-base: 30px;
+  --font-size-lg: 40px;
+
+  /* Colors */
+  --color-black: #000;
+  --color-darkslategray-100: #424347;
+  --color-dimgray: #54575a;
+}
